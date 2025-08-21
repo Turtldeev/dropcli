@@ -4,7 +4,6 @@
 
 <div align="center">
 
-[![License: BSD 3-Clause](https://img.shields.io/badge/BSD 3-Clause-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
 [![Playwright](https://img.shields.io/badge/powered%20by-Playwright-2EAD33?logo=playwright)](https://playwright.dev/)
 
