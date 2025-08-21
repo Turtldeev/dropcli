@@ -3,10 +3,6 @@ import os
 from playwright.async_api import async_playwright, expect
 
 async def get_and_parse_temp_email():
-    """
-    Launches a browser, gets a temporary email, then waits for,
-    parses, and displays incoming emails.
-    """
     async with async_playwright() as p:
         print("Launching browser in headless mode...")
         browser = await p.chromium.launch(headless=True)
@@ -22,7 +18,7 @@ async def get_and_parse_temp_email():
             temp_email = await email_element.inner_text()
             
             print("\n" + "="*35)
-            print(f"  Temporary Email: {temp_email}")
+            print(f"  Temporary email: {temp_email}")
             print("="*35 + "\n")
 
             print("Waiting for new emails. Press Ctrl+C to exit.")
@@ -51,7 +47,7 @@ async def get_and_parse_temp_email():
                             email_id = f"{sender}:{subject}"
 
                             if email_id not in processed_emails:
-                                print(f"\n--- New Email Found! ---")
+                                print(f"\n--- New email found! ---")
                                 
                                 body_element = email_item.locator('pre[data-bind*="linkifiedText"]').first
                                 await expect(body_element).to_be_visible(timeout=10000)
