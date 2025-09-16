@@ -5,13 +5,12 @@
 <div align="center">
 
 [![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
-[![Playwright](https://img.shields.io/badge/powered%20by-Playwright-2EAD33?logo=playwright)](https://playwright.dev/)
 
 </div>
 
 <hr>
 
-A robust, asynchronous script that uses Playwright to generate a temporary email address from `dropmail.me`, monitors the inbox, and parses incoming emails in real-time.
+A robust, asynchronous script that uses httpx and beautifulsoup4 to generate a temporary email address from `dropmail.me`, monitors the inbox, and parses incoming emails in real-time.
 
 ## ✨ Core Features
 
@@ -38,13 +37,7 @@ A robust, asynchronous script that uses Playwright to generate a temporary email
 2.  **Install Python dependencies:**
     The script requires the `playwright` library.
     ```bash
-    pip install playwright
-    ```
-
-3.  **Install Playwright browsers:**
-    This command downloads the necessary browser binaries for Playwright to control.
-    ```bash
-    python -m playwright install
+    pip install httpx beautifulsoup4
     ```
 
 ## 🚀 Usage
@@ -60,11 +53,6 @@ The script will first fetch a new temporary email address and display it. Then, 
 ### Example Output
 
 ```
-Checking Playwright installation...
-Launching browser in headless mode...
-Navigating to dropmail.me...
-Waiting for temporary email address generation...
-
 ===================================
   Temporary Email: ajndoldjqbphbp@dropmail.me
 ===================================
