@@ -14,7 +14,7 @@ A robust, asynchronous script that uses httpx and beautifulsoup4 to generate a t
 
 ## ✨ Core Features
 
-- **Reliable Automation**: Uses Playwright to directly interact with the web page, making it more stable than manual request-based methods.
+- **Reliable Automation**: Uses httpx + beautifulsoup4 to directly interact with the web page, making it more stable than manual request-based methods.
 - **Real-time Monitoring**: After generating an email, the script actively watches the inbox for new messages.
 - **Email Parsing**: Automatically extracts the sender, subject, and body from new emails.
 - **Headless Operation**: Runs in the background without needing a visible browser window.
